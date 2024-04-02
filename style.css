@@ -86,38 +86,44 @@ body{
     border: 1px solid #d1d1d1;
 }
 
-.container button{
-    width: 100%;
-    height: 50px;
-    background: var(--bcg-color);
-    color: #fff;
-    border: 0;
-    outline: 0;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 20px 0;
-    font-weight: 500;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
-
+.box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+.box button, .box a{
+font-size: 13px;
+padding: 0.8em 2em;
+border-radius: 10px;
+margin-top: 1em;
+width: 100%;
+text-transform: uppercase;
+font-weight: bold;
+letter-spacing:4px;
+}
+.box button {
+    background-color: var(--bcg-color);
+    color: #fff; 
+   
+    border: 2px solid var(--bcg-color);
     letter-spacing: 4px;
     font-weight: bold;
     margin-inline: 2px;
     padding: 14px 36px;
-    text-align: center;
-
-font-size: 13px;
-text-align: center;
-font-variant-position:center;
-padding: 10px 10px;
-border-radius:13px;
- margin-top: 10px; 
-width: 55%;
-text-transform: uppercase;
-font-weight: bold;
-letter-spacing:2px;
 }
-
-
+.box a{
+    background-color: var(--bcg-color);
+    color: #fff;
+    border: 2px solid var(--bcg-color);
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    float: right 10px;
+    padding: 14px 36px;
+    margin-inline: 2px;
+}
+   
 .container1 {
     display: flex;
     justify-content: center;
@@ -131,13 +137,8 @@ letter-spacing:2px;
     display:none;
 }
 
-
-
-
-
  
 /*  */
-
 
 
 .error{
@@ -160,58 +161,3 @@ letter-spacing:2px;
         transform: translateX(0);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* .box{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-.box button, .box a{
-font-size: 13px;
-text-align: center;
-font-variant-position:center;
-padding: 10px 10px;
-border-radius:13px;
- margin-top: 10px; 
-width: 55%;
-text-transform: uppercase;
-font-weight: bold;
-letter-spacing:2px;
-}
-.box button:disabled {
-    background-color: var(--bcg-color);
-    color: #fff; 
-   
-    border: 2px solid var(--bcg-color);
-    letter-spacing: 4px;
-    font-weight: bold;
-    margin-inline: 2px;
-    padding: 14px 36px;
-    text-align: center;
-}
-
-
-.box a{
-    background-color: var(--bcg-color);
-    color: #fff;
-    border: 2px solid var(--bcg-color);
-    letter-spacing: 4px;
-    text-decoration: none;
-    font-weight: bold;
-    float: right 10px;
-    padding: 14px 36px;
-    margin-inline: 2px;
-} */
